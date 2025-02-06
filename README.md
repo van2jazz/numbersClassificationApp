@@ -80,8 +80,7 @@ To execute unit test, run:
 ```
 
 ## Deployment
-
 This API is deployed on Railway. You can access it at:
+[https://numbersclassificationapp-production.up.railway.app/api/classify-number?number=371](https://numbersclassificationapp-production.up.railway.app/api/classify-number?number=371)
 
-[https://hng-production-1736.up.railway.app/api](https://hng-production-1736.up.railway.app/api)
 
