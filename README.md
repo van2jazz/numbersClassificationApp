@@ -85,9 +85,10 @@ This API is deployed on Railway. You can classify any number using the following
 [https://numbersclassificationapp-production.up.railway.app/api/classify-number?number=371](https://numbersclassificationapp-production.up.railway.app/api/classify-number?number=371)
 
 
-### Running tests
+
+## Running tests
 To execute unit test, run:
 ```bash
-    mvn test
+ mvn test
 ```
 
