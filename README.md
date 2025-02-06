@@ -44,7 +44,8 @@ mvn spring-boot:run
 
 
 ## API Endpoints
-#### To classify a Number
+
+#### To classify a Number locally, use:
 
 ```bash
 GET http://localhost:8080/api/classify-number?number=371
@@ -61,6 +62,7 @@ GET http://localhost:8080/api/classify-number?number=371
 }
 ```
 
+
 ### Handling Invalid Input
 ```bash
 GET http://localhost:8080/api/classify-number?number=alphabet
@@ -73,14 +75,19 @@ GET http://localhost:8080/api/classify-number?number=alphabet
 }
 ```
 
+## Deployment
+This API is deployed on Railway. You can classify any number using the following URL:
+```bash{
+    https://numbersclassificationapp-production.up.railway.app/api/classify-number?number={your_number}
+```
+**Example**:
+
+[https://numbersclassificationapp-production.up.railway.app/api/classify-number?number=371](https://numbersclassificationapp-production.up.railway.app/api/classify-number?number=371)
+
+
 ### Running tests
 To execute unit test, run:
 ```bash
     mvn test
 ```
-
-## Deployment
-This API is deployed on Railway. You can access it at:
-[https://numbersclassificationapp-production.up.railway.app/api/classify-number?number=371](https://numbersclassificationapp-production.up.railway.app/api/classify-number?number=371)
-
 
