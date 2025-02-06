@@ -44,35 +44,34 @@ mvn spring-boot:run
 
 
 ## API Endpoints
-#### Classify a Number
+#### To classify a Number
 
 ```bash
-GET /classify/{number}
+GET http://localhost:8080/api/classify-number?number=371
 ```
-
-
-
-
-
-
-
-Access the API Locally at:
-
-
-## API Documentation
-
-### Endpoint URL
+#### Example Response:
 ```bash
-GET /api
+{
+    "number": 371,
+    "is_prime": false,
+    "is_perfect": false,
+    "properties": ["armstrong","odd"],
+    "digit_sum": 11,
+    "fun_fact": "371 is a narcissistic number."
+}
 ```
 
-### Response Format(200 OK)
-
-    {
-      "email": "van2jazz@gmail.com",
-      "current_datetime": "2025-01-30T22:29:19Z",
-      "github_url": "https://github.com/van2jazz/hng"
-    }
+### Handling Invalid Input
+```bash
+GET http://localhost:8080/api/classify-number?number=alphabet
+```
+#### Example Response:
+```bash
+{
+    "number": "alphabet",
+    "error": true
+}
+```
 
 
 ## Deployment
@@ -81,6 +80,3 @@ This API is deployed on Railway. You can access it at:
 
 [https://hng-production-1736.up.railway.app/api](https://hng-production-1736.up.railway.app/api)
 
-
-## Related Links
-[Hire Java developers](https://hng.tech/hire/java-developers)
