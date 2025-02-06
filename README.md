@@ -1,6 +1,6 @@
-# Number Classification API
+# Number Classification APP
 
-The Number Classification API is a Spring Boot application that classifies numbers based on various properties, such as prime, perfect, Armstrong, and odd/even. It also fetches fun facts about numbers using an external API.
+The Number Classification APP is a Spring Boot application that classifies given numbers based on different properties, such as prime, perfect, Armstrong, and odd/even. It also uses an external API to fetch fun, unique facts about numbers.
 
 ### Features
 
