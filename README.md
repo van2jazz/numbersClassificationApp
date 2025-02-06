@@ -76,9 +76,7 @@ GET http://localhost:8080/api/classify-number?number=alphabet
 ### Running tests
 To execute unit test, run:
 ```bash
-{
     mvn test
-}
 ```
 
 ## Deployment
